@@ -4,6 +4,12 @@ import SubFieldset from "./SubFieldset";
 import Form from "./Form";
 
 function App() {
+  const welcome = () => {
+    console.log("Hej! Tutaj możesz przeliczyć waluty.");
+  }
+
+  welcome();
+
   return (
     <Form>
       <Header
