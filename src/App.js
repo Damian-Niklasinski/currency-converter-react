@@ -7,7 +7,6 @@ function App() {
   const welcome = () => {
     console.log("Hej! Tutaj możesz przeliczyć waluty.");
   }
-
   welcome();
 
   return (

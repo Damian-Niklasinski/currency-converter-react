@@ -1,9 +1,8 @@
 import "./style.css";
 
-const Form = ({ children, newCurrency }) => {
+const Form = ({ children }) => {
     const onFormSubmit = (event) => {
         event.preventDefault();
-        newCurrency();
     };
    
     return (
