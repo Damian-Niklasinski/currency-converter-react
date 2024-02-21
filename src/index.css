@@ -30,12 +30,6 @@ body {
   margin: auto;
 }
 
-.form {
-  color: #fff;
-  text-align: center;
-  padding: 35px;
-}
-
 .form__header {
   color: hsl(39, 83%, 45%);
 }
