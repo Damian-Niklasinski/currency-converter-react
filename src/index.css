@@ -7,8 +7,12 @@ html {
 }
 
 body {
+  max-width: 1000px;
+  background-image: url("https://cutewallpaper.org/21/dark-wallpaper-1920x1080/Dark-Desktop-Backgrounds-1920x1080-Best-Background-Images-.jpg");
   font-family: "Montserrat", sans-serif;
-  background-color: rgba(228, 227, 227, 0.506);
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: auto;
 }
 
 html {
@@ -19,13 +23,4 @@ html {
 ::after,
 ::before {
   box-sizing: inherit;
-}
-
-body {
-  max-width: 1000px;
-  background-image: url("https://cutewallpaper.org/21/dark-wallpaper-1920x1080/Dark-Desktop-Backgrounds-1920x1080-Best-Background-Images-.jpg");
-  font-family: "Montserrat", sans-serif;
-  background-repeat: no-repeat;
-  background-size: auto;
-  margin: auto;
 }
