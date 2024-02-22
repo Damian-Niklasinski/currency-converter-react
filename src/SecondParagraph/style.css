@@ -1,0 +1,12 @@
+.form__strong {
+    color: hsl(39, 83%, 55%);
+    font-size: 18px;
+    margin-left: 15px;
+
+}
+
+.form__flag {
+    max-width: 45px;
+    vertical-align: middle;
+    border-radius: 25px;
+}
