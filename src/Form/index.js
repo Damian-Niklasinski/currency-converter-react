@@ -5,7 +5,7 @@ import { Result } from "./Result";
 
 const Form = ({ result, calculateResult }) => {
 
-    const [currency, setCurrency] = useState(currencies[0].shortcut)
+    const [currency, setCurrency] = useState(currencies[1].shortcut)
     const [amount, setAmount] = useState("");
 
     const onFormSubmit = (event) => {
@@ -57,7 +57,6 @@ const Form = ({ result, calculateResult }) => {
                     </label>
                 </p>
                 <button className="form__button">Przelicz!</button>
-                <button className="form__button" type="reset">Wyczyść!</button>
             </fieldset>
             <Result result={result} />
         </form>
