@@ -2,7 +2,7 @@
 
 ## Demo
 
-[Currency Converter](https://damian-niklasinski.github.io/Currencty-Converter/)
+[Currency Converter](https://damian-niklasinski.github.io/currency-converter-react/)
 
 ## Description
 
