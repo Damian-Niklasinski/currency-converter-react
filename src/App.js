@@ -6,9 +6,10 @@ import Legend from "./Legend";
 import Fieldset from "./Fieldset";
 import Buttons from "./Buttons";
 import SecondParagraph from "./SecondParagraph";
-
+import ResultParagraph from "./ResultParagraph";
 
 function App() {
+
   return (
     <Form>
       <Header title="Kalkulator Walut" />
@@ -22,6 +23,7 @@ function App() {
         legendTitle={<Legend title="PRZELICZ NA" />}
         buttons={<Buttons />}
       />
+      <ResultParagraph />
 
     </Form>
   )
