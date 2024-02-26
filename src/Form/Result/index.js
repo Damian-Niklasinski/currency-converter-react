@@ -1,13 +1,13 @@
-import "./style.css";
+import { Paragraph, Strong} from "./styled";
 
 export const Result = ({ result }) => (
-    <p className="form__result">
+    <Paragraph>
         Kwota po przeliczeniu:
         {result !== undefined && (
-            <strong className="form__strong">
+            <Strong>
                 {result.targetAmount.toFixed(2)}{" "}{result.currency}
-            </strong>
+            </Strong>
         )}
-    </p>
+    </Paragraph>
 );
 

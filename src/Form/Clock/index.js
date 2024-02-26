@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import "./style.css";
+import { Paragraph } from "./styled"
+
 
 export const Clock = () => {
 
@@ -20,7 +21,7 @@ export const Clock = () => {
 
     return (
         <>
-            <p className="form__date">
+            <Paragraph>
                 Dzisiaj jest {""}
                 {date.toLocaleString("pl-PL",
                     {
@@ -31,7 +32,7 @@ export const Clock = () => {
                         minute: "2-digit",
                         second: "2-digit"
                     })}
-            </p>
+            </Paragraph>
         </>
     )
 }

@@ -1,8 +1,8 @@
-import "./style.css";
 import { currencies } from "../currencies";
 import { useState } from "react";
 import { Result } from "./Result";
 import { Clock } from "./Clock";
+import { FormMain, Header, Fieldset, Legend, Img, Input, Select, Button  } from "./styled"
 
 const Form = ({ result, calculateResult }) => {
 
@@ -16,18 +16,18 @@ const Form = ({ result, calculateResult }) => {
 
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <h1 className="form__header">KALKULATOR WALUT</h1>
+        <FormMain onSubmit={onFormSubmit}>
+            <Header>KALKULATOR WALUT</Header>
             <Clock />
-            <fieldset className="form__fieldset">
-                <legend className="form__legend">PRZELICZ Z</legend>
-                <p className="form__paragraph">
+            <Fieldset>
+                <Legend>PRZELICZ Z</Legend>
+                <p>
                     <label>
-                        <img className="form__flag"
+                        <Img
                             src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/255px-Flag_of_Poland.svg.png"
                             alt="Polska flaga" />
                         {" "}PLN:
-                        <input className="form__value"
+                        <Input
                             value={amount}
                             onChange={({ target }) => setAmount(target.value)}
                             name="PLN"
@@ -37,14 +37,13 @@ const Form = ({ result, calculateResult }) => {
                             required />
                     </label>
                 </p>
-            </fieldset>
-            <fieldset className="form__fieldset">
-                <legend className="form__legend">PRZELICZ NA</legend>
-                <p className="form__paragraph">
+            </Fieldset>
+            <Fieldset>
+                <Legend>PRZELICZ NA</Legend>
+                <p>
                     <label>
                         Wybierz walute:
-                        <select
-                            className="form__select"
+                        <Select
                             value={currency}
                             onChange={({ target }) => setCurrency(target.value)}
                             name="currencySelect"
@@ -57,13 +56,13 @@ const Form = ({ result, calculateResult }) => {
                                     {currency.name}
                                 </option>
                             ))}
-                        </select>
+                        </Select>
                     </label>
                 </p>
-                <button className="form__button">Przelicz!</button>
-            </fieldset>
+                <Button>Przelicz!</Button>
+            </Fieldset>
             <Result result={result} />
-        </form>
+        </FormMain>
     )
 };
 
