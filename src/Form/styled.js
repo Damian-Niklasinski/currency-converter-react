@@ -62,3 +62,16 @@ export const Button = styled.button`
     border-radius: 3px;
     background-color: hsla(227, 9%, 20%, 0.637);
 `;
+
+export const Loading = styled.p`
+    margin-top: 250px;
+    font-size: 20px;
+    color: orange;
+`;
+
+export const Failure = styled.p`
+    padding: 50px;
+    margin-top: 250px;
+    font-size: 35px;
+    color: red;
+`;

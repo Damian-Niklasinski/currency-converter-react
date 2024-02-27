@@ -7,7 +7,6 @@ export const Clock = () => {
     const date = useCurrentDate();
 
     return (
-        <>
             <Paragraph>
                 Dzisiaj jest {""}
                 {date.toLocaleString("pl-PL",
@@ -20,7 +19,6 @@ export const Clock = () => {
                         second: "2-digit"
                     })}
             </Paragraph>
-        </>
     )
 }
 
