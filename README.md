@@ -7,10 +7,7 @@
 ## Description
 
 That currency converter it was created for the YouCode course.
-Here you can convert PLN to:
-- EUR
-- USD
-- GBP
+Here you can convert PLN to different currencies
 
 ## Technology used
 
