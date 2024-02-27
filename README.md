@@ -15,7 +15,12 @@ Here you can convert PLN to:
 ## Technology used
 
 - REACT
+- AWAIT / ASYNC
+- Styled Components
+- Custom Hooks
 - JSX
+- Axios
+- Fetch
 - HTML
 - CSS
 - JS
@@ -25,7 +30,8 @@ Here you can convert PLN to:
 ## How to use?
 
 1. Type a number in the PLN field.
-2. Click "Przelicz!" to get the result.
+2. Select one of the currencies
+3. Click "Przelicz!" to get the result.
 3. The result will be shown at the bottom.
 
 
